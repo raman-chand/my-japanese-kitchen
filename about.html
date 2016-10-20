@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Japanese Kitchen About</title>
+	<!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Botstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!--Favicon-->
+    <link rel="icon" href="logo/favicon.ico" type="image/ico" sizes="16x16">
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull= $('#pull');
+                menu= $('nav ul');
+                menuHeight= menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="container-fluid">
+	<!--Header-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-2">
+                    <a href="index.html">
+                        <img class="logo" src="logo/seventh_logo.jpeg" alt="My Japanese Kitchen" width="130" height="130" align="left">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-10">
+                    <nav class="clearfix">
+                        <ul class="nav nav-pills" class="clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="etiquette.html">Etiquette</a></li>
+                            <li><a href="editor_choice.html">Editor's Choice</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <a href="#" id="pull">Menu</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+	    <div class="editors">
+	    	<div class="contianer">
+                <h3>Meet the Editors</h3>
+                <hr>
+	    		<div class="row">
+				    <div class="profiles">
+				    	<div class="col-xs-5 col-md-3">
+					        <div class="thumbnail">
+					            <img src="images/amy.jpg" alt="Amy"/>
+					        </div>
+					    </div>
+					    <div class="col-xs-12 col-md-9">
+						    <h3>Amy Campos</h3>
+						    <br>
+						    <p>Ever since she was young Amy has had an interest in Japanese culture. Her fascination really took off in college where she joined the school's Japanese culture club. There along with her club members she explored the intricacies of Japanese Cuisine. Through her experiences she came to value authenticity and aims to bring that authenticity to those interested in Japanese cuisine. Her favorite dish is okonomoyaki.</p>
+						</div>
+					</div>
+			   	</div>
+			   	<hr class="horizontal">
+			    <div class="row">
+					<div class="profiles">
+						<div class="col-xs-5 col-md-3">
+					        <div class="thumbnail">
+					            <img src="images/raman.jpg" alt="Ramanpreet"/>
+					        </div>
+					    </div>
+					    <div class="col-xs-12 col-md-9">
+						   <h3>Ramanpreet Chand</h3>
+						   <br>
+						   <p>"Hmm it must have been that first bite of Ramen," muses Ramanpreet, when asked at what point her fascination with Japanese cuisine began. Though relatively new to the scene, her expert cooking knowledge has allowed her to provide many of the recipes seen in this website. As you may have guessed her favorite dish is Ramen, much like the titular character of the famed manga "Naruto".
+						   </p>
+					   </div>
+					</div>
+				</div>
+	        </div>
+	   	</div> 
+    </main>
+    
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <ul class="nav nav-pills pull-left" id="social">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="copyright" align="right">
+                        <p>&copy; Amy Campos and Ramanpreet Chand</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

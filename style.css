@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document for My Japanese Kitchen */
+
+html, header, body, main, footer{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', Arial, Helvetica;
+}
+
+/* Clearfix for navigation */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*configured a gradient*/
+body { 
+	background-color: #4F6D93;
+    color: #666666;
+	background-image: linear-gradient(to bottom, #FFFFFF, #ffe6ff);
+	background-repeat: no-repeat;
+}
+
+/*Header*/
+header {
+	padding: .15em 0;
+	height: 5em;
+	background-repeat: repeat;
+}
+
+h1 {
+	padding-top:2px;
+	height:1px;
+	margin:1px;
+}
+
+h2, h3, p {
+	text-align:center;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+}
+
+nav {
+	margin-top: 2em;
+	height: 5em;
+	width: 100%;
+	font-size: 11pt;
+	font-weight: bold;
+	position: relative;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+}
+
+nav li {
+	display: inline-block;
+	float: left;
+}
+
+nav a {
+	color: #cc6baf;
+	display: inline-block;
+	width: 165px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+nav li a {
+	box-sizing: border-box;
+}
+
+nav li:last-child a {
+	border-right: 0;
+}
+
+nav a:link { 
+	color: #cc6baf; 
+}
+
+nav a:visited { 
+	color: #cc6baf; 
+}
+
+nav a:hover {
+	color: #ffa500; 
+	transition: color 1s ease-out;
+}
+
+nav li:hover ul {
+	display:block;
+}
+
+nav a#pull {
+	display: none;
+}
+
+/*Main for all pages*/
+
+main {
+	margin-top: 1em;
+}
+
+/*Index*/
+.index_carousel {
+    margin-top: 3em;
+    clear: both;
+}
+
+.item {
+    text-align: center;
+    width: auto;
+}
+
+.bs-example{
+    margin: 10px;
+}
+
+.slider-size {
+	height: 35em; /* This is your slider height */
+}
+        
+.carousel {
+    width:100%;
+    margin:0 auto; /* center your carousel if other than 100% */ 
+}
+
+.negative-space {
+	margin-top: 1em;
+	position: relative;
+	background-size: cover;
+	width: 100%;
+	border: 1px solid #fff;
+	height: 20em;
+	background-color: #fff;
+}
+
+.text {
+	padding: 0 1.5em;
+	text-align: center;
+	font-family: 'Montserrat', serif;
+	width: 23em;
+	height: 23em;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -70px 0 0 -170px;
+}
+
+.text h3 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.text p {
+	font-size: 1em;
+}
+
+.col-md-6 h4 {
+	text-align: center;
+}
+
+.button {
+	margin-bottom: 1em;
+	float: right;
+	clear: left;
+	padding: 1em 2em;
+	border: 1px solid #fff;
+	background-color: #e6e6e6;
+	border-radius: .5em;
+	color: #cc6baf;
+	font-size: 14px;
+}
+
+span {
+	font-weight: bold;
+}
+
+/*All pages*/
+.index_editors_choice .col-md-6, .index_etiquette .container, .index_directory .col-md-4 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+div .thumbnail {
+	background-color: #f2f2f2;
+}
+
+div .thumbnail p {
+	margin: 1em 0;
+}
+
+.thumbnail:hover {
+	background-color: #fff;
+	transition: background-color .25s ease-out;
+}
+
+/*About*/
+
+.profiles h3, .profiles p {
+	text-align: left;
+	margin-left: 2em; 
+}
+
+.profiles .picture {
+	border: 1px solid black;
+	padding: 2em;
+}
+
+.profiles .col-xs-5 {
+	float: left;
+}
+
+.editors {
+	display:block;
+ 	padding: 2px 30px;
+ 	font-size:14px;
+ 	margin-left: 4px
+ 	width:2px;
+}
+
+.horizontal {
+	margin: 2em 0 3em 0;
+}
+
+/*Directory, Etiquette, Editor's Choice, About and Contact Pages*/
+
+.editors, .directory, .etiquette, .editor_choice, .about, .contact {
+	margin-top: 5em;
+	clear: both;
+}
+
+/*Etiquette*/
+
+.etiquette p {
+	margin-bottom: 5em;
+}
+
+.etiquette div p {
+	text-align: left;
+}
+
+/*Contact*/
+
+.contact {
+	margin-left: 5em;
+}
+
+#comment {
+	width:430px;
+	margin:60px auto;
+	padding:60px 30px;
+	border:1px solid #e1e1e1;
+	background-color:#99ccff;	
+}
+
+
+label {
+	float:left;
+	margin-right: -.5em;
+	display:block;
+	text-align:left;
+	width:120px;
+	max-height: 30px;
+	padding-right:1px;
+
+}
+input {
+	background-color: #728eaa;
+	display: block;
+	padding: .5em;
+	max-height: 40px;
+	min-width: 30px;
+	border-radius: .5em;
+}
+textarea {
+	display: block;
+	margin-bottom: 20px;
+	width: 400px;
+	height: 160px;
+	border-radius: .5em;
+}
+input:focus, textarea:focus { /*psuedo-class*/
+	background-color:#FFFFCC;
+}
+
+input[type=submit] {
+	border-radius: .5em;
+	background-color:#FFFFCC;
+	width:10em;
+	height:10em;
+}
+
+/*Footer*/
+footer {
+	margin-top: 1em;
+	padding: .5em;
+	clear: both;
+}
+
+footer ul {
+	list-style: none;
+	display: inline;
+	color:#cc6baf;
+}
+
+
+#social a:link {
+	margin-top: 1em 0 0;
+	color: #cc6baf;
+}
+
+#copyright {
+	float: right;
+	margin: 1em 0 0 0;
+	padding: 2px;
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	.logo {
+		margin-top: 5em;
+		margin-bottom: -6em;
+	    position: relative;
+	    display: block;
+	    top: 100%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	    width: 130px;
+	    height: 130px;
+	}
+	nav {
+		height: auto;
+	}
+	nav ul {
+		width: 100%;
+		display: none;
+		height: auto;
+	}
+	nav li {
+		width: 100%;
+		float: left;
+	}
+	nav a {
+		text-align: center;
+		width: 100%;
+	}
+	nav a#pull {
+		margin: 0 0 1em;
+		display: block;
+		background-color: #e6e6e6;
+		width: 100%;
+		position: relative;
+		clear: both;
+		text-align: left;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('logo/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	#pull {
+		padding: 0 2em;
+	}
+	textarea {
+		display: block;
+		margin-bottom: 20px;
+		width: 200px;
+		height: 160px;
+		border-radius: .5em;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	.logo {
+		margin-top: 5em;
+		margin-bottom: -6em;
+	    position: relative;
+	    display: block;
+	    top: 100%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	    width: 130px;
+	    height: 130px;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
