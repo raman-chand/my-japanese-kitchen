@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Japanese Kitchen Etiquette</title>
+	<!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Botstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!--Favicon-->
+    <link rel="icon" href="logo/favicon.ico" type="image/ico" sizes="16x16">
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull= $('#pull');
+                menu= $('nav ul');
+                menuHeight= menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="container-fluid">
+	<!--Header-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-2">
+                    <a href="index.html">
+                        <img class="logo" src="logo/seventh_logo.jpeg" alt="My Japanese Kitchen" width="130" height="130" align="left">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-10">
+                    <nav class="clearfix">
+                        <ul class="nav nav-pills" class="clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="etiquette.html">Etiquette</a></li>
+                            <li><a href="editor_choice.html">Editor's Choice</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <a href="#" id="pull">Menu</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>   
+    
+    <!--Main-->
+    <main>
+        <div class="etiquette">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="images/eating.png" alt="japanese table" width="400" height="350">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <h3>Polite Meals</h3>
+                        <p>In appreciation for the food you've eaten, the Japanese tend to say "gochisousamadeshita," 「ごちそうさまでした」<br>It is a polite form of thanking someone for the meal you've received. The opposite, of course, is "ittadakimasu," 「いっただきます」<br> The intention is to be thankful of the meal you are about to enjoy.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="thumbnail">
+                           <img src="images/chopsticks.jpg" width="350" height="300">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <h3>Chopsticks　｜　おはし　｜　お箸</h3>
+                        <ul>
+                            <li>Avoid Pointing your chopsticks at someone while talking.</li>
+                            <li>Do not wave your chopsticks around over food on the table.</li>
+                            <li>Do not stab your food with your chopsticks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="thumbnail">
+                            <a href="images/drinking.jpg" data-lightbox="roadtrip"><img src="images/drinking.jpg" alt="japanese drinking"></a>
+                        </div>
+                    </div>  
+                    <div class="col-xs-6 col-md-4">
+                        <h3>Drinking</h3>
+                        <p>While drinking, it is customary to serve one another rather than to pour your own drink. <br>Do not start drinking until everybody at the table has a drink and the glasses are raised for a drinking salute, which usually is "kampai," 「カンパイ」.</p>
+                </div>
+                    
+            </div>
+        </div>
+
+    </main>
+    
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <ul class="nav nav-pills pull-left" id="social">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="copyright" align="right">
+                        <p>&copy; Amy Campos and Ramanpreet Chand</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

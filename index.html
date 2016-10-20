@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Japanese Kitchen</title>
+	<!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Botstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!--Favicon-->
+    <link rel="icon" href="logo/favicon.ico" type="image/ico" sizes="16x16">
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull= $('#pull');
+                menu= $('nav ul');
+                menuHeight= menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="container-fluid">
+	<!--Header-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-2">
+                    <a href="index.html">
+                        <img class="logo" src="logo/seventh_logo.jpeg" alt="My Japanese Kitchen" width="130" height="130" align="left">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-10">
+                    <nav class="clearfix">
+                        <ul class="nav nav-pills" class="clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="directory.html">Directory</a></li>
+                            <li><a href="etiquette.html">Etiquette</a></li>
+                            <li><a href="editor_choice.html">Editor's Choice</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <a href="#" id="pull">Menu</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--Main-->
+    <main>
+        <div class="index_carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div style="background:url(images/food.jpg) center center;
+                            background-size:cover;" class="slider-size">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div style="background:url(images/udon.jpg) center center;
+                          background-size:cover;" class="slider-size">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div style="background:url(images/sushi.jpg) center center;
+                          background-size:cover;" class="slider-size">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div style="background:url(images/sashimi.jpg) center center;
+                          background-size:cover;" class="slider-size">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    	<div class="index_editors_choice">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-12">
+		    			<div class="negative-space">
+                            <div class="text">
+		    				  <h3>Editor's Top Choices</h3>
+			    			  <p>We share our favorite oldies and explore new goodies</p> 
+		    			   </div>
+                        </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="container">
+    			<div class="row">
+    				<div class="col-xs-12 col-md-6">
+                        <div class="thumbnail">
+    					   <img src="images/maguro-hon-maguro.jpg" alt="1" width="100%" height="200">
+                        	<h4>Editor Amy tells the difference between Maguro and Hon-Maguro マグロ　vs.　本マグロ</h4>
+                        </div>
+    				</div>
+    				<div class="col-xs-12 col-md-6">
+                        <div class="thumbnail">
+    					   <img src="images/gyoza.jpg" alt="" width="100%" height="400">
+    					   <h4>For the first time, Editor Raman tried Gyoza <br>ぎょうざ　｜　[餃子]</h4>
+    					</div>
+    				</div>
+    			</div>
+    			<a href="editor_choice.html"><div class="button"><span>Editor's Choice</span></div></a>
+    		</div>
+    	</div>
+
+    	<div class="index_etiquette">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-12">
+		    			<div class="negative-space">
+                            <div class="text">
+		    				  <h3>A Guide to Dining Etiquette</h3>
+		    				  <p>My Japanese Kitchen shares points of view</p>
+                            </div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="container">
+    			<div class="row ">
+    				<div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+    					   <img src="images/chopsticks.jpg" width="350" height="300">
+                        </div>
+       				</div>
+       				<div class="col-xs-12 col-md-6">
+       					<h3>Chopsticks　｜　おはし　｜　お箸</h3>
+       					<ul>
+       						<li>Avoid Pointing your chopsticks at someone while talking.</li>
+       						<li>Do not wave your chopsticks around over food on the table.</li>
+       						<li>Do not stab your food with your chopsticks</li>
+       					</ul>
+       				</div>
+    			</div>
+                <a href="etiquette.html"><div class="button"><span>Etiquette</span></div></a>
+    		</div>
+    	</div>
+
+    	<div class="index_directory">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-12">
+		    			<div class="negative-space">
+                            <div class="text">
+			    			  <h3>Try it at Home</h3>
+			    			  <p>A uniquley tailored directory of Japanese cuisine for you to try</p> 
+		    			   </div>
+                        </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="container">
+    			<div class="row">
+    				<div class="col-md-4">
+    					<div class="thumbnail">
+                          <img src="images/kimchee-ramen.jpg" alt="kimchee-ramen"/>
+                          <p>Kimchee Ramen　｜　キムチェエラメン</p>
+                        </div>
+                    </div>
+    				<div class="col-md-4">
+    					<div class="thumbnail">
+                          <img src="images/natto-tororo-udon.jpg" alt="natto-tororo-udon"/>
+                          <p>Natto Tororo Udon　｜　なっとろろうどん</p>
+                        </div>
+    				</div>
+    				<div class="col-md-4">
+						<div class="thumbnail">
+                          <img src="images/salmon-miso-soup.jpg" alt="salmon-miso-soup"/>
+                          <p>Salmon Miso Soup　｜　さけのみそスープ</p>
+                        </div>
+    				</div>
+                </div>
+                <a href="directory.html"><div class="button"><span>Directory</span></div></a>
+            </div>
+    	</div>
+    </main>
+    
+    <!--Footer-->
+    <footer>
+    	<div class="container-fluid">
+        	<div class="row">
+            	<div class="col-xs-12 col-md-6">
+	               	<ul class="nav nav-pills pull-left" class="clearfix" id="social">
+	                    <li><a href="#">Facebook</a></li>
+	                    <li><a href="#">Instagram</a></li>
+	                    <li><a href="#">Twitter</a></li>
+	                </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+	                <div id="copyright" align="right">
+	                	<p>&copy; Amy Campos and Ramanpreet Chand</p>
+	                </div>
+	            </div>
+            </div>
+        </div>
+    </footer>
+
+	<!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
